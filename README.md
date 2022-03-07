@@ -39,6 +39,11 @@ env)$ python manage.py migrate
 
 - files can be uploaded via web on the UPLOAD TAB. => Choose a .uff file (D0010) and click on upload file. Then it will be saved to the data base as well as displaying to the user. 
 
+## Comments
 
+If I would have more time:
+- I would write functions to difirentiate each meter data, reading, meter point, MPAN, etc. 
+- I would add search capabilities based on values provided on serial number or meter point
+- Unit testing
 
 
