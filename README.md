@@ -19,13 +19,18 @@ $ source env/bin/activate
 
 (env)$ pip install django
 
-## Then install the dependencies:
+## Start db.sqlite3 :
 
-(env)$ pip install django
+(env)$ python manage.py migrate
+
+## Create migration:
+
+(env)$ python manage.py makemigrations
+
+env)$ python manage.py migrate
 
 ## Once pip has finished downloading the dependencies:
 
-(env)$ cd project
 (env)$ python manage.py runserver
 
 ## Walkthrough
