@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from octopus.core import views
+
 urlpatterns = [
+    path('', views.home, name='home'),
     path('admin/', admin.site.urls),
+    path('upload', views.upload, name='upload'),
+    path('records/', views.record_list, name='record_list')
+   
 ]

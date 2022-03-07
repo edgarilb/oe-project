@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'octopus.core.apps.CoreConfig',
+    'octopus.core',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-             BASE_DIR / 'octopus'
+             BASE_DIR / 'octopus/core/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {

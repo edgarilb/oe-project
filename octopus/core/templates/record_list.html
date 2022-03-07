@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Records</h2>
+<table class="table">
+    <thread>
+        <tr>
+            <th>Record</th>
+        </tr>
+    </thread>
+    <tbody>
+        {% for record in records %}
+            <tr>
+                <td>
+                    {{record}}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
