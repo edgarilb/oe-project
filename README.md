@@ -5,30 +5,30 @@ These are pipe-delimited text files that are sent to us via sFTP. Our systems th
 each file into our database.
 
 
-### The first thing to do is to clone the repository:
+## The first thing to do is to clone the repository:
 
 cd octopus
 
 
-### Create a virtual environment to install dependencies in and activate it:
+## Create a virtual environment to install dependencies in and activate it:
 
 $ virtualenv venv -p python3
 $ source env/bin/activate
 
-### Then install the dependencies:
+## Then install the dependencies:
 
 (env)$ pip install django
 
-### Then install the dependencies:
+## Then install the dependencies:
 
 (env)$ pip install django
 
-### Once pip has finished downloading the dependencies:
+## Once pip has finished downloading the dependencies:
 
 (env)$ cd project
 (env)$ python manage.py runserver
 
-### Walkthrough
+## Walkthrough
 
 - files can be imported via the command-line: Use command => python manage.py mycommand PATH_DIR_FILE --option1 INT_NUMBER. This will display to user at least 20 records from D0010 flow file, depending on the number input on --option1. If it is more than 20 will display more than 20, unless it reaches the maximum in the file, in which scenario the max number contained in the file will be shown. 
 
